@@ -5,7 +5,10 @@ class Navbar extends Component {
   render() {
     return (
       <nav className={style.navbar}>
-        <ul>gkdl</ul>
+        <ul className={style.navbar__link}>
+          <li className={style.navbar__link_items}>기업</li>
+          <li className={style.navbar__link_items}>공고</li>
+        </ul>
       </nav>
     );
   }
