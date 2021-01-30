@@ -6,8 +6,16 @@ class Navbar extends Component {
     return (
       <nav className={style.navbar}>
         <ul className={style.navbar__link}>
-          <li className={style.navbar__link_items}>기업</li>
-          <li className={style.navbar__link_items}>공고</li>
+          <li className={style.navbar__linkItems}>
+            <a href="company" className={style.navbar__linkItemsContent}>
+              기업
+            </a>
+          </li>
+          <li className={style.navbar__linkItems}>
+            <a href="hire_board" className={style.navbar__linkItemsContent}>
+              공고
+            </a>
+          </li>
         </ul>
       </nav>
     );
