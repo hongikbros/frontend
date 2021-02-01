@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import style from '../css/main.module.css';
+import searchIcon from '../images/search_icon.svg';
 
 class Search extends Component {
   render() {
@@ -6,7 +8,7 @@ class Search extends Component {
       <form action="local">
         <input type="text" />
         <button type="submit">
-          <img src="./" alt="./" />
+          <img src={searchIcon} alt="serach_icon" className={style.utilIcons} />
         </button>
       </form>
     );
