@@ -6,6 +6,8 @@
   border-right: 2px solid #d3e0ea;
   display: flex;
   flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .calendarDay:nth-child(even) {
