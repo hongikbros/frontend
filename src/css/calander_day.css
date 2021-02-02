@@ -1,0 +1,30 @@
+.calendarDay {
+  width: 14.285%;
+  height: 100%;
+  background-color: #f6f5f5;
+  border-left: 2px solid #d3e0ea;
+  border-right: 2px solid #d3e0ea;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendarDay:nth-child(even) {
+  border-left: none;
+  border-right: none;
+}
+
+.calendarDay.red {
+  color: red;
+}
+
+.calendarDay.blue {
+  color: blue;
+}
+
+.calendarDayToday {
+  background-color: #bbdfc8;
+}
+
+.calendarDayNotThisMonth {
+  background-color: #bbbbbb;
+}
