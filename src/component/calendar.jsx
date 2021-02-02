@@ -11,25 +11,25 @@ class Calendar extends Component {
     };
   }
 
+  getWeek = (firstWeek, lastWeek, day) => {
+    let result = [];
+    let week = firstWeek;
+    for (week; week <= lastWeek; week += 1) {
+      result = result.concat(<CalendarWeek key={week} week={week} day={day} />);
+    }
+
+    return result;
+  };
+
   render() {
     const { today } = this.state;
+    const day = today;
     const firstWeek = today.clone().startOf('month').week();
     const lastWeek =
       today.clone().endOf('month').week() === 1
         ? 53
         : today.clone().endOf('month').week();
-
-    const getWeek = () => {
-      let result = [];
-      let week = firstWeek;
-      for (week; week <= lastWeek; week += 1) {
-        result = result.concat(
-          <CalendarWeek key={week} week={week} today={today} />,
-        );
-      }
-
-      return result;
-    };
+    const result = this.getWeek(firstWeek, lastWeek, day);
 
     return (
       <div className={style.calendarWrap}>
@@ -37,24 +37,24 @@ class Calendar extends Component {
           <button
             type="button"
             onClick={() => {
-              const momentUpper = today.clone().subtract(1, 'month');
+              const momentUpper = day.clone().subtract(1, 'month');
               this.setState({ today: momentUpper });
             }}
           >
             이전 달
           </button>
-          {today.format('YY-MM')}
+          {day.format('YY-MM')}
           <button
             type="button"
             onClick={() => {
-              const momentLower = today.clone().add(1, 'month');
+              const momentLower = day.clone().add(1, 'month');
               this.setState({ today: momentLower });
             }}
           >
             다음 달
           </button>
         </div>
-        <div className={style.calendar}>{getWeek()}</div>
+        <div className={style.calendar}>{result}</div>
       </div>
     );
   }

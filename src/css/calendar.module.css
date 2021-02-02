@@ -16,7 +16,8 @@
   justify-content: center;
   align-items: center;
   height: 40px;
-  background-color: darkcyan;
+  background-color: #ece2e1;
+  border-bottom: 2px solid #d3e0ea;
 }
 
 .calendarHeader button {
@@ -24,5 +25,15 @@
 }
 
 .calendarWeek {
-  height: 120px;
+  height: 100px;
+  border-bottom: 2px solid #d3e0ea;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendarWeek {
+  display: flex;
 }
