@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Calander from './calander';
+import Calendar from './calendar';
 import JobOpening from './job_opening';
 import Search from './search';
 import style from '../css/main.module.css';
@@ -9,7 +9,7 @@ class Main extends Component {
     return (
       <main className={style.main}>
         <Search />
-        <Calander />
+        <Calendar />
         <JobOpening />
       </main>
     );
