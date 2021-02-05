@@ -1,0 +1,20 @@
+.jobOpeningBoardWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.jobOpeningBoard {
+  background-color: wheat;
+  width: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.jobOpeningBoardContent {
+  width: 100px;
+  font-size: 1rem;
+  border: 1px solid black;
+}
