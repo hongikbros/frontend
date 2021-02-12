@@ -30,3 +30,12 @@
 .calendarDayNotThisMonth {
   background-color: #bbbbbb;
 }
+
+.calendar-day-company-list {
+  font-size: 0.7rem;
+  overflow-y: scroll;
+}
+
+.calendar-day-company-list::-webkit-scrollbar {
+  display: none;
+}

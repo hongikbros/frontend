@@ -28,15 +28,15 @@ class JobOpeningBoard extends Component {
 
   render() {
     const { jobOpenings } = { ...this.state };
-    console.log(jobOpenings);
     return (
       <div className={style.jobOpeningBoardWrap}>
         <div className={style.jobOpeningBoard}>
-          {jobOpenings.map((data) => (
+          {jobOpenings.map((data, index) => (
             <JobOpeningBoardContent
               companyName={data.companyName}
               deadline={data.deadline}
               title={data.title}
+              id={index}
             />
           ))}
         </div>
