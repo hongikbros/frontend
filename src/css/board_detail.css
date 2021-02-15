@@ -1,0 +1,36 @@
+.board-detail-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.board-detail-container {
+  width: 50%;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-detail-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board-detail-main {
+  width: 100%;
+}
+
+.board-detail__main-header {
+  display: flex;
+}
+
+.return-button {
+  cursor: pointer;
+  background-color: chartreuse;
+}
+
+.company-icon {
+  width: 80px;
+}
