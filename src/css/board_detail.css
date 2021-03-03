@@ -1,0 +1,46 @@
+.board-detail-container {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 65%;
+  background-color: #9fb8ad;
+  border-radius: 12.5px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-detail-header {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board-detail-main {
+  width: 100%;
+  height: 75%;
+}
+
+.board-detail__main-header {
+  display: flex;
+}
+
+.board-detail-footer {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.return-button {
+  cursor: pointer;
+  background-color: chartreuse;
+}
+
+.company-icon {
+  width: 80px;
+}

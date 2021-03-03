@@ -8,12 +8,16 @@ const JobOpeningBoardContent = (props) => {
 
     e.currentTarget.style.backgroundColor = 'gray';
   };
+  const { openModal } = props;
+
   return (
-    <div
+    <button
       className={style.jobOpeningBoardContent}
       draggable="true"
       onDragStart={onDragStart}
       data-id={id}
+      type="button"
+      onClick={openModal}
     >
       {companyName}
       <br />
@@ -21,7 +25,7 @@ const JobOpeningBoardContent = (props) => {
       <br />
       {title}
       <br />
-    </div>
+    </button>
   );
 };
 export default JobOpeningBoardContent;
