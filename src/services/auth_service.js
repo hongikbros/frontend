@@ -1,5 +1,5 @@
 class AuthService {
-  static login() {
+  login() {
     const userInfo = true;
     return userInfo;
   }
