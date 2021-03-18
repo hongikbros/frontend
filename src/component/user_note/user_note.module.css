@@ -1,0 +1,44 @@
+.userNote {
+  width: 30rem;
+  height: 45rem;
+  background: #f3f2da;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.boardForm {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+.boardInput {
+  flex: 1;
+  padding: 0.2rem;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+.boardInputIcon {
+  background: white;
+  height: 100%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.boardList {
+  height: 38rem;
+  padding: 1rem;
+  background: #f4f4f2;
+  overflow-y: auto;
+}
+.boardItem {
+  width: 100%;
+  border: 1px solid black;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}

@@ -1,7 +1,6 @@
 .main {
-  padding: 2rem 20%;
+  padding: 2rem 15%;
   display: flex;
-  flex-direction: column;
 }
 
 .main > * {
