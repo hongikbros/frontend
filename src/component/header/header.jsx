@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './header.module.css';
 
 const Header = ({ loginState }) => {
-  const loginText = loginState ? '로그인' : '로그아웃';
+  const loginText = loginState ? 'login' : 'logout';
 
   return (
     <header className={styles.header}>

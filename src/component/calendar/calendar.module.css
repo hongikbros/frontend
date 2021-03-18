@@ -1,6 +1,6 @@
 .calendarContainer {
   width: 100%;
-  height: 66vh;
+  height: 60vh;
   border: 2px solid #a7a7a7;
 }
 
@@ -35,7 +35,7 @@
 
 .calendarWeek {
   width: 100%;
-  height: 10vh;
+  height: 9vh;
   border-top: 1px solid black;
   display: flex;
 }

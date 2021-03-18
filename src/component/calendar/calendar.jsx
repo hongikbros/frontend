@@ -3,7 +3,7 @@ import moment from 'moment';
 import styles from './calendar.module.css';
 import CalendarWeek from './calendar_week';
 
-const Calendar = ({ calendarInfo }) => {
+const Calendar = () => {
   const [today, setToday] = useState(moment());
   const firstWeek = today.clone().startOf('month').week();
   const lastWeek =
@@ -35,8 +35,6 @@ const Calendar = ({ calendarInfo }) => {
 
     return result;
   };
-
-  console.log(today, firstWeek, lastWeek, calendarInfo);
 
   return (
     <div className={styles.calendarContainer}>

@@ -1,0 +1,16 @@
+{
+    "items": [
+        {
+            "name": "Samsung",
+            "location": "Seoul"
+        },
+        {
+            "name": "Kakao",
+            "location": "Jeju"
+        },
+        {
+            "name": "Naver",
+            "location": "Pangyo"
+        }
+    ]
+}

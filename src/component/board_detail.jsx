@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../css/board_detail.css';
-import searchIcon from '../images/search_icon.svg';
 
 class BoardDetail extends Component {
   constructor(props) {

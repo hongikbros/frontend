@@ -52,7 +52,6 @@ const CalendarWeek = ({ day, week }) => {
         );
       });
 
-  console.log(day);
   return <div className={styles.calendarWeek}>{getDay(day, week)}</div>;
 };
 
