@@ -10,10 +10,6 @@ const Header = ({ loginState }) => {
         Job <br />
         Manager
       </div>
-      <ul className={styles.navbar}>
-        <li className={styles.navbarLink}>기업</li>
-        <li className={styles.navbarLink}>공고</li>
-      </ul>
       <button type="button" className={styles.loginButton}>
         {loginText}
       </button>

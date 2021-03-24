@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Header from './component/header/header';
 import Main from './component/main/main';
 
-const App = ({ authService, getCalendarInfo }) => {
+const App = ({ authService }) => {
   const loginState = authService.login();
-  const calendarInfo = getCalendarInfo.getInfo();
   const [boardInfo, setBoardInfo] = useState([
     {
       company: '카카오',
