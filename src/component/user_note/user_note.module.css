@@ -9,29 +9,20 @@
   flex-shrink: 0;
 }
 
-.boardForm {
+.registerBoard {
+  width: 10rem;
+  padding: 0.3rem;
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 2rem;
-  margin-bottom: 1rem;
-}
-.boardInput {
-  flex: 1;
-  padding: 0.2rem;
-  height: 100%;
-  border: none;
-  outline: none;
-  font-size: 0.9rem;
-}
-.boardInputIcon {
-  background: white;
-  height: 100%;
-  font-size: 2rem;
+  background-color: #f4f4f2;
+  margin-bottom: 0.5rem;
   cursor: pointer;
+  border: 1px solid #949494;
 }
 
 .boardList {
-  height: 38rem;
+  height: 100%;
   padding: 1rem;
   background: #f4f4f2;
   overflow-y: auto;
@@ -41,4 +32,8 @@
   border: 1px solid black;
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
+}
+.submitBtn {
+  background-color: white;
+  width: 40px;
 }
