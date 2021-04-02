@@ -40,9 +40,10 @@ const App = ({ authService }) => {
   const openModal = () => {
     setModalVisible(true);
   };
-  const sendBoardData = (e) => {
-    console.log(e);
-    console.log('dataSend');
+  const sendBoardData = (board) => {
+    const updated = boardInfo;
+    updated.push(board);
+    setBoardInfo(updated);
   };
 
   return (
